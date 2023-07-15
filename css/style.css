@@ -11,6 +11,10 @@
     display: none;
 }
 
+.height-key {
+    height: 100% !important;
+}
+
 html, body, .container {
     height: 100%;
 }
