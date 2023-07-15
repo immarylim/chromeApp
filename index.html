@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromeApp</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top">
+            <!-- login -->
+            <div class="login-box">
+                <form class="login-form">
+                    <input 
+                        type="text"
+                        maxlength="5"
+                        placeholder="별명 (5글자 이내)"
+                        required
+                    />
+
+                    <button>→</button>
+                </form>
+            </div>
+
+            <div class="name-box hidden">
+                <span class="name-point"></span>
+                <span class="name-con"> 의 Home</span>
+            </div>
+
+            <!-- time -->
+            <div class="clock-box">
+                <p></p>
+            </div>
+
+            <!-- weather -->
+            <div class="weather-box">
+                <img class="weather-img">
+
+                <span class="weather-con-1">지역 ???</span>
+                <span class="weather-con-2">온도 ???</span>
+            </div>
+        </header>
+
+        <section>
+            <!-- main text -->
+            <div class="main">
+                <div class="main-box-1">
+                    <p class="main-txt main-txt-1">Have <span>a</span></p>
+                </div>
+
+                <div class="main-box-2">
+                    <p class="main-txt main-txt-2">Nice Day</p>
+                </div>
+            </div>
+
+            <!-- todo list -->
+            <div class="todo-box hidden">
+                <p class="todo-title">오늘의 일정</p>
+
+                <form class="todo-form">
+                    <input 
+                        type="text"
+                        maxlength="15"
+                        placeholder="일정을 입력하세요. (15글자 이내)"
+                        required
+                    />
+
+                    <button><img src="img/plus.png"></button>
+                </form>
+
+                <div class="shadow"></div>
+
+                <ul class="todo-list"></ul>
+            </div>
+
+            <!-- fortune -->
+            <div class="fortune-box hidden">
+                <p class="fortune-title">오늘의 운세</p>
+
+                <div class="fortune-con">
+                    <div class="fortune-main">
+                        <p class="fortune-num"></p>
+                    </div>
+
+                    <div class="fortune-detail">
+                        <p class="fortune-color"></p>
+                        <p class="fortune-dir"></p>
+                        <p class="fortune-name"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- diary -->
+            <div class="diary-box hidden">
+                <p class="diary-title">오늘의 일기</p>
+
+                <form class="diary-form">
+                    <textarea 
+                        placeholder="내용을 입력해주세요."
+                        spellcheck="false"
+                        required
+                    ></textarea>
+
+                    <button><img src="img/plus.png"></button>
+                </form>
+
+                <div class="diary-con hidden">
+                    <p class="diary-inner"></p>
+
+                    <button>삭제</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- js file -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/fortune.js"></script>
+    <script src="js/diary.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/blur.js"></script>
+</body>
+</html>
