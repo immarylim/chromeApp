@@ -65,9 +65,7 @@ const savedTodo = localStorage.getItem(TODO_KEY);
 if(savedTodo !== null) {
     const parsedTodo = JSON.parse(savedTodo);
 
-    // 새로고침 하면 빈 배열로 시작하므로,
     parsedTodo.forEach((item) => {
-        /* 오류 코드 .. todoArray = item; */
         todoArray.push(item);
         onPaintTodo(item);
     });

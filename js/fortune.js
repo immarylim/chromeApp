@@ -4,12 +4,12 @@ const fortuneNum = document.querySelector(".fortune-num");
 const fortuneColor = document.querySelector(".fortune-color");
 const fortuneDir = document.querySelector(".fortune-dir");
 const fortuneName = document.querySelector(".fortune-name");
+const fortuneRefresh = document.querySelector(".fortune-top button");
 
 const color = ['빨간색', '분홍색', '남색', '회색', '흰색', '파란색', '보라색'];
 const direction = ['동쪽', '서쪽', '남쪽', '북쪽'];
 const conso = ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
 
-// fortune이 null 아닌 경우 한 번 더 찍어내야 됨
 function onSetFortune() {
     const fortune = localStorage.getItem("fortune");
 
@@ -23,6 +23,8 @@ function onSetFortune() {
         fortuneDir.innerHTML = `<span>행운의 방향</span> ${randomDir}`;
         fortuneName.innerHTML = `<span>행운의 이름</span> ${randomName}`;
     }
+
+    fortuneRefresh.addEventListener("click", onRefresh);
 }
 
 function onFortune() {
@@ -40,25 +42,12 @@ function onFortune() {
     const randomArray = [random, color[randomColor], direction[randomDir], conso[randomName]];
 
     localStorage.setItem("fortune", randomArray);
-
-    if(random >= 60) {
-        document.querySelector(".gradient").style.backgroundColor = "radial-gradient(#B6F03A -20%, white 60%, white 40%)";
-    }
 }
 
-function onUpdateFortune() {
-    const date = new Date();
+function onRefresh() {
+    localStorage.removeItem("fortune");
 
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-
-    if(hours === 0 && minutes === 0) {
-        onFortune();
-    }
+    onSetFortune();
 }
 
-// 기본
 onSetFortune();
-
-// 매 초마다 정각인지 체크
-setInterval(onUpdateFortune, 1000);

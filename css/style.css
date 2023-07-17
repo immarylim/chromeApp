@@ -159,7 +159,7 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.todo-title, .fortune-title, .diary-title {
+.todo-title, .diary-title {
     padding: 18px;
     font-weight: 600;
 }
@@ -262,6 +262,30 @@ section {
     position: absolute;
     top: 30px;
     right: 470px;
+}
+
+.fortune-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+.fortune-top > button {
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.fortune-top > button:hover {
+    transform: rotate(360deg);
+}
+
+.fortune-top > button > img {
+    width: 20px;
 }
 
 .fortune-con {

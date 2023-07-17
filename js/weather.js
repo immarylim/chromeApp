@@ -22,11 +22,8 @@ function onGeoSuccess(position) {
     });
 }
 
-// 위치 찾을 수 없을 때 css도 수정
 function onGeoError() {
     alert("위치를 찾을 수 없습니다.");
 }
 
-// geolocation API -> 사용자의 현재 위치 정보
-// getCurrentPosition() -> 위도, 경도 값
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
