@@ -5,6 +5,8 @@
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
 </p>
 
+<img src="https://github.com/immarylim/chromeApp/assets/139189720/019395a4-e7db-41a2-b68c-fe79ba30ce38"/>
+
 ### ✍️ 개요
 　블라블라 ...
 
