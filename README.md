@@ -1,4 +1,4 @@
-# 크롬 앱
+# 크롬 앱 클론코딩
 <p>
   <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
@@ -12,7 +12,7 @@
 
 ### ✍️ 개요
 　jQuery와 React.js 라이브러리를 공부하기에 앞서, 어떠한 라이브러리도 사용하지 않은 순수한 자바스크립트를 이해하는 것부터 시작하고자 강의를 수강했다.
- 강의에서는 크롬의 확장 프로그램인 Momentum을 클론 코딩하는 것을 목표로 한다. 나는 기존 Momentum의 기능들을 조금씩 수정해 위와 같은 '크롬 앱' 프로젝트를 
+ 강의에서는 크롬의 확장 프로그램인 Momentum을 클론코딩하는 것을 목표로 한다. 나는 기존 Momentum의 기능들을 조금씩 수정해 위와 같은 '크롬 앱' 프로젝트를 
  완성하게 되었다.
 
 ### 👀 기능
